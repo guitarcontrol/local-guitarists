@@ -1,0 +1,21 @@
+
+     
+            <!--- display our featured member song post --->
+            <div id="mainfeature">
+                <div id="mainfeatures" class="mainfeatures">
+                    <div id="maintitle" class="maintitle">&#187;&nbsp;Featured Post&nbsp;&#187;&nbsp;<a href="view.php?id=789" title="Blow Out">Blow Out</a></div>
+                    <div id="featurecontent" class="featurecontent">
+                    Posted by shredfit in Blues
+
+                    <p />
+                    This is a blues jam I did about a week ago while the wife was shopping...  I posted it on another guitar site and they seemed to like it.
+                <p />
+                    <b>Gear Used:</b><br />
+                    Jackson Jr<br />
+POD Pro<br />
+Pro Tools
+                <p />
+                    Rated <img src="/rate/images/5.0.stars.gif" width="45" height="9" alt="5.0 out of 5" border="0" />
+                    </div>
+                </div>
+            </div>

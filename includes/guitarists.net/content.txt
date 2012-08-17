@@ -1,0 +1,92 @@
+
+        <!-- last updated on Nov 30, 2007 @ 12:00 AM -->
+
+            
+            <!--- display our featured product --->
+            <div id="mainfeature">
+                <div id="mainfeatures" class="mainfeatures">
+                    <div id="maintitle" class="maintitle">&raquo;&nbsp;Featured Product</div>
+                    <div id="featurecontent" class="featurecontent">
+                    <ul>
+                        <li>
+                        <?php
+                            // display the testimonials about affiliate products
+                            if (@include(getenv('DOCUMENT_ROOT').'/ads/phpadsnew.inc.php')) {
+                                if (!isset($phpAds_context)) $phpAds_context = array();
+                                $phpAds_raw = view_raw ('zone:32', 0, '', '', '0', $phpAds_context);
+                                echo $phpAds_raw['html'];
+                            }
+                        ?>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!--- display our featured member song post --->
+            <div id="mainfeature">
+                <div id="mainfeatures" class="mainfeatures">
+                    <div id="maintitle" class="maintitle">&raquo;&nbsp;<a href="music/index.php">Our Music</a> Spotlight</div>
+                    <div id="featurecontent" class="featurecontent">
+                        <img src="images/featured_music.png" width="110" hspace="5" height="73" alt="Featured Music" style="float: right;" />
+                        <ul>
+                            <li>
+                                &#187;&nbsp;<a href="/music/view.php?id=789" title="Blow Out">Blow Out</a> (Blues)<br />
+                                This is a blues jam I did about a week ago while the wife was shopping...  I posted it on another guitar site and they seemed to like it.  Posted by shredfit                <p />
+                    <b>Gear Used:</b><br />
+                    Jackson Jr<br />
+POD Pro<br />
+Pro Tools
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!--- display our featured lesson --->
+            <div id="mainfeature">
+                <div id="mainfeatures" class="mainfeatures">
+                    <div id="maintitle" class="maintitle">&raquo;&nbsp;Featured <a href="lessons/index.php">Lesson</a></div>
+                    <div id="featurecontent" class="featurecontent">
+                        <img src="images/featured_lesson.png" width="110" hspace="5" height="73" alt="Featured Lesson"  style="float: right;" />
+                        <ul>
+                            <li>
+                                &#187;&nbsp;<a href="/lessons/view.php?id=61" title="Scales for the Beginning Guitarist">Scales for the Beginning Guitarist</a> (Scales and Soloing)<br />
+                                These are the 5 positions of the Major scale.  The root note is the note that determines what the scale is called.  Such as, Gamjor, Amajor Bbmajor etc.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!--- display our featured gear review --->
+            <div id="mainfeature">
+                <div id="mainfeatures" class="mainfeatures">
+                    <div id="maintitle" class="maintitle">&raquo;&nbsp;Featured <a href="gear/index.php">Gear Review</a></div>
+                    <div id="featurecontent" class="featurecontent">
+                        <img src="images/featured_gear.png" width="125" hspace="5" height="62" alt="Gear Reviews" style="float: right;" />
+                        <ul>
+                            <li>
+                                &#187;&nbsp;<a href="/gear/view.php?id=800" title="DigiTech DF-7 Distortion Factory">DigiTech DF-7 Distortion Factory</a> (Effects)<br />
+                                Distortion pedals are as important to the world of guitar playing as guitar playing is to modern music.  How do you get a whole spectrum of distortion tones? You can spend a fortune on individual stompboxes (and have a pedal board the size of Delaware)â€¦ or you can put our new X-Seriesâ„¢ DF-7 Distortion Factoryâ„¢ to work.  You not only get DigiTech quality models like the IbanezÂ® TS-9 Tube ScreamerÂ®*, EHÂ® Big Muffâ„¢ Ï€*, Pro Co Ratâ„¢*, Metal ZoneÂ®* and DODÂ® Overdrive/Preamp 250, you also get a ton of EQ control.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!--- display our featured software --->
+            <div id="mainfeature">
+                <div id="mainfeatures" class="mainfeatures">
+                    <div id="maintitle" class="maintitle">&raquo;&nbsp;Featured <a href="software/index.php">Software</a></div>
+                    <div id="featurecontent" class="featurecontent">
+                        <ul>
+                            <li>
+                                &#187;&nbsp;<a href="/software/view.php?id=17" title="XoloX">XoloX</a> (File Sharing)<br />
+                                XoloX is a compact (634KB), spyware-free p2p client designed for downloading and sharing files on gnutella.  XoloX is the first gnutella client that has the ability to download a file from multiple sources similar to KaZaa.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
