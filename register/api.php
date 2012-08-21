@@ -97,17 +97,19 @@ if ($process == "create") {
         exit();
     }
 	
-	$intNewId = $dbConn->getRow("SELECT ID FROM `members` WHERE strEmail = " . $dbConn->quote($response["email"]), DB_FETCHMODE_ASSOC);
+	$intNewId = $dbConn->getRow("SELECT ID FROM `members` WHERE strEmail = " . $dbConn->quote($response["email"]), DB_FETCHMODE_ASSOC);		
 	
     // get the last added ID
-    $userid = mysql_insert_id($dbConn->connection);
+    $userid = $intNewId["ID"];
 
     // get the state and country for the user
-    $state = $dbConn->getRow("SELECT ID FROM `states` WHERE strName = " . $dbConn->quote($response["state"]) . " LIMIT 1");
-    if ($response["country"] == "United States") {
-        $country["ID"] = 213;
+    $state = $dbConn->getRow("SELECT ID FROM `states` WHERE strAbbr = " . $dbConn->quote($response["state"]) . " LIMIT 1", DB_FETCHMODE_ASSOC);	
+	
+    if ($response["country"] == "US") {
+        $countryid = "213";		
     } else {
-        $country = $dbConn->getRow("SELECT ID FROM `countries` WHERE strCountry = " . $dbConn->quote($response["country"]) . " LIMIT 1");
+        $country = $dbConn->getRow("SELECT ID FROM `countries` WHERE strCountry = " . $dbConn->quote($response["country"]) . " LIMIT 1", DB_FETCHMODE_ASSOC);		
+		$countryid = $country["ID"];
     }
 
     // add the about info
@@ -120,13 +122,19 @@ if ($process == "create") {
             intGender,
             intAge
         ) values (
-            '" . $intNewId["ID"] . "',
+            '" . $userid . "',
             '" . trim(ucfirst(strtolower($response["city"]))) . "',
             " . trim($state["ID"]) . ",
-            " . trim($country["ID"]) . ",
+            " . trim($countryid) . ",
             1,
             0
         )");
+		
+    if (PEAR::isError($about)) {
+       $response["msg"] = "error";
+        print trim(json_encode($response));
+        exit();
+    }
 } else if ($process == "update") {
     // check the password
     if (empty($response["password"]) && empty($response["md5password"])) {
