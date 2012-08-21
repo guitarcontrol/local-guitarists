@@ -96,7 +96,9 @@ if ($process == "create") {
         print trim(json_encode($response));
         exit();
     }
-
+	
+	$intNewId = $dbConn->getRow("SELECT ID FROM `members` WHERE strEmail = " . $dbConn->quote($response["email"]), DB_FETCHMODE_ASSOC);
+	
     // get the last added ID
     $userid = mysql_insert_id($dbConn->connection);
 
@@ -118,7 +120,7 @@ if ($process == "create") {
             intGender,
             intAge
         ) values (
-            '" . $userid . "',
+            '" . $intNewId["ID"] . "',
             '" . trim(ucfirst(strtolower($response["city"]))) . "',
             " . trim($state["ID"]) . ",
             " . trim($country["ID"]) . ",
