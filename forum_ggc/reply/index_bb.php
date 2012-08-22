@@ -117,6 +117,7 @@
     }
 ?>
     <script language="JavaScript" src="/inc/func.js"></script>
+    <script language="JavaScript" type="text/javascript" src="/inc/functions.js"></script>
     
     <br>
     <div align="center">
