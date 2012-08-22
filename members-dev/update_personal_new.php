@@ -12,7 +12,7 @@
     require("ads.php");
     require("functions.php");
     require("12all_db.php");
-    require("classes/class_input_filter.php");
+    //require("classes/class_input_filter.php");
     
     // create our input filter object
     $filter = new InputFilter();
@@ -79,7 +79,8 @@
     // update 'members' with the passed data
     $qryUpdate = $dbConn->query("
         update  members
-        set     strFName = '" . trim($filter->process($_POST["strFName"])) . "',
+        set     strUsername = '" . trim($filter->process($_POST["strUsername"])) . "',
+		        strFName = '" . trim($filter->process($_POST["strFName"])) . "',
                 strLName = '" . trim($filter->process($_POST["strLName"])) . "',
                 intSendEmail = '" . $filter->process($_POST["intSendEmail"]) . "',
                 FontID = '" . $filter->process($_POST["FontID"]) . "',
@@ -224,6 +225,16 @@
     
     // update our session style layout
     $_SESSION["Style"] = array($_POST["FontID"], $_POST["FontSize"]);
+	
+	
+	// update username session
+	$members_dset= $dbConn->getRow("
+	      SELECT    strUsername 
+	      FROM     `members` 
+		  WHERE 	ID = '" . $filter->process($_POST["ID"]) . "'"
+	, DB_FETCHMODE_ASSOC);	
+	
+	$_SESSION["Username"] = $members_dset["strUsername"];
     
     // all done!
     print "

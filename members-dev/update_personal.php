@@ -75,7 +75,8 @@
     // update 'members' with the passed data
     $qryUpdate = $dbConn->query("
         update  members
-        set     strFName = '" . trim($filter->process($_POST["strFName"])) . "',
+        set     strUsername = '" . trim($filter->process($_POST["strUsername"])) . "',
+		        strFName = '" . trim($filter->process($_POST["strFName"])) . "',
                 strLName = '" . trim($filter->process($_POST["strLName"])) . "',
                 intSendEmail = '" . $filter->process($_POST["intSendEmail"]) . "',
                 FontID = '" . $filter->process($_POST["FontID"]) . "',
@@ -93,6 +94,7 @@
                 dateEdited = Now()
         where  intMemID = '" . $filter->process($_POST["ID"]) . "'");
     
+	
     // see if we need to upload any files
     if (!empty($_FILES["img_photo"]["name"])) {
         // grab all images in the db for this user
@@ -220,6 +222,15 @@
     
     // update our session style layout
     $_SESSION["Style"] = array($_POST["FontID"], $_POST["FontSize"]);
+	
+	// update username session
+	$members_dset= $dbConn->getRow("
+	      SELECT    strUsername 
+	      FROM     `members` 
+		  WHERE 	ID = '" . $filter->process($_POST["ID"]) . "'"
+	, DB_FETCHMODE_ASSOC);	
+	
+	$_SESSION["Username"] = $members_dset["strUsername"];
     
     // all done!
     print "

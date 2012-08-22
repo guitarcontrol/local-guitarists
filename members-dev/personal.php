@@ -94,11 +94,19 @@
     <table width="600" cellspacing="0" cellpadding="1" border="0">
     <form name="myForm" action="update_personal.php" method="post" enctype="multipart/form-data" onSubmit="return checkPersonalInfo()">
     <input type="Hidden" name="ID" value="<?php print $_SESSION["MemberID"]; ?>" />
-    <input type="Hidden" name="strUsername" value="<?php print trim($qryInfo["strUsername"]); ?>" />
     <input type="Hidden" name="strEmail" value="<?php print trim($qryInfo["strEmail"]); ?>" />
     <tr>
+           <td width="110"><b>Username:</b> </td>
+           <td width="490">       
+        <input type="text" name="strUsername" value="<?php print trim($qryInfo["strUsername"]); ?>" maxlength="30" size="20" class="input">
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2"><br></td>
+    </tr>
+    <tr>
            <td width="110"><b>Name:</b> </td>
-           <td width="490">
+           <td width="490">       
         <input type="text" name="strFName" value="<?php print trim($qryInfo["strFName"]); ?>" maxlength="30" size="20" class="input">
         <input type="text" name="strLName" value="<?php print trim($qryInfo["strLName"]); ?>" maxlength="35" size="25" class="input"></td>
     </tr>
