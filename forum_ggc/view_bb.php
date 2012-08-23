@@ -449,13 +449,13 @@
                 <?php
                     // see if they can reply
                     if ($qryMain["bitReply"] && $_SESSION["MemberID"]) {
-                        print "<option value=\"/forum_ggc/reply/index_bb.php?thread=" . $_GET["thread"] . "\">&nbsp;&raquo;&nbsp;Post A Reply</option>";
+                        print "<option value=\"/forum_ggc/reply/index_bb.php?ggc=1&thread=" . $_GET["thread"] . "\">&nbsp;&raquo;&nbsp;Post A Reply</option>";
                     }
                     
                     // see if they're logged in
                     if ($_SESSION["MemberID"]) {
                         // allow them to start a new thread
-                        print "<option value=\"/forum_ggc/post/index_bb.php?forum=" . $_GET["forum"] . "\">&nbsp;&raquo;&nbsp;Start a New Thread</option>";
+                        print "<option value=\"/forum_ggc/post/index_bb.php?ggc=1&forum=" . $_GET["forum"] . "\">&nbsp;&raquo;&nbsp;Start a New Thread</option>";
                         
                         // see if they have any saved threads
                         if (count($arrSaved)) {
@@ -485,7 +485,7 @@
                     <option value="/forum_ggc/search.php">&nbsp;&raquo;&nbsp;Search Threads</option>
                     <option value="/forum_ggc/index.php">&nbsp;&raquo;&nbsp;Home</option>
                 </select>
-                <input type="Button" value="Go!" class="smbutton" onClick="location.href=document.myChoiceTop.option.options[document.myChoiceTop.option.selectedIndex].value">
+                <input type="Button" value="Go!" class="smbutton" onClick="location.href=document.myChoiceBottom.option.options[document.myChoiceBottom.option.selectedIndex].value">
                 </td>
                 </form>
                 <td class="smalltxt">
