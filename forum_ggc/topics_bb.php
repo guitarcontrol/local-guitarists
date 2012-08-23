@@ -219,6 +219,16 @@
 
     <table width="100%" cellspacing="0" cellpadding="2" border="0">
 
+    <tr>
+
+        <td class="tablehead">&nbsp;&raquo;&nbsp;<a href="/forum_ggc/index.php"><b>Home</b></a>&nbsp;&raquo;&nbsp;<a href="/forum_ggc/forums.php?id=<?php print $qryForum["intParent"]; ?>"><b><?php print $qryForum["strTitle"]; ?></b></a>&nbsp;&raquo;&nbsp;<?php print $qryForum["strName"]; ?></td>
+
+    </tr>
+
+    </table>
+
+    <table width="100%" cellspacing="0" cellpadding="2" border="0">
+
     <tr valign="top">
 
         <td>

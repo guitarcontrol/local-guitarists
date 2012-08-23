@@ -301,6 +301,11 @@
     </table>
 <?php } ?>
 
+    <table width="100%" cellspacing="1" cellpadding="3" border="0">
+    <tr>
+        <td class="tablehead">&nbsp;&raquo;&nbsp;<a href="/forum_ggc/index.php"><b>Home</b></a>&nbsp;&raquo;&nbsp;<a href="/forum_ggc/topics_bb.php?forum=<?php print $_GET["forum"]; ?>"><b><?php print $qryMain["strName"]; ?></b></a>&nbsp;&raquo;&nbsp;<?php print $qryMain["strTitle"]; ?></td>
+    </tr>
+    </table>
     <table width="100%" cellspacing="0" cellpadding="2" border="0">
     <tr valign="top">
         <td>
