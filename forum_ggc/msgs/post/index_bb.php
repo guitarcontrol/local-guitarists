@@ -68,6 +68,7 @@
         <?php
     }
 ?>
+    <script language="JavaScript" type="text/javascript" src="/inc/functions.js"></script>
     <script language="JavaScript" src="/inc/func.js"></script>
 
     <br>
@@ -83,7 +84,11 @@
         </tr>
         </table>
         <?php } ?>
-        
+        <table width="100%" cellspacing="0" cellpadding="2" border="0">
+        <tr>
+            <td class="tablehead">&nbsp;&raquo;&nbsp;<a href="/forum_ggc/index.php"><b>Home</b></a>&nbsp;&raquo;&nbsp;<a href="/forum_ggc/msgs/index.php"><b>Private Messages</b></a>&nbsp;&raquo;&nbsp;Send a New Message<?php if (strlen($qryUser["strUsername"])) { print " to " . $qryUser["strUsername"]; } ?></td>
+        </tr>
+        </table>
         <table cellspacing="0" cellpadding="2" border="0">
         <tr>
             <td width="100">Recipient:</td>

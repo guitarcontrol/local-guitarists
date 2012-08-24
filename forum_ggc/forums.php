@@ -108,7 +108,7 @@
 
     <table width="100%" cellpadding="0" cellspacing="2" border="0">
     <tr>
-        <td class="tablehead">&nbsp;&raquo;&nbsp;<a href="/index.php"><b>Home</b></a>&nbsp;&raquo;&nbsp;<a href="/forum_ggc/index.php"><b>Guitar Discussions</b></a></td>
+        <td class="tablehead">&nbsp;&raquo;&nbsp;<a href="/forum_ggc/index.php"><b>Home</b></a></td>
     </tr>
     </table>
             

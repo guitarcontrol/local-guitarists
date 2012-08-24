@@ -148,7 +148,7 @@
         </tr>
         <tr>
             <td><br>
-            You can discuss these songs in <a href="/forum/topics.php?forum=23"><b>Our Music</b></a> forum.<br> 
+            You can discuss these songs in <a href="/forum_ggc/topics.php?forum=23"><b>Our Music</b></a> forum.<br> 
             Feel free to <a href="submit.php"><b>add your own songs</b></a> to be listed here 
             (membership required).
             </td>

@@ -109,12 +109,12 @@
             $htmlText .= "<li>" . number_format($arrMusic["totals"]) . " new pieces in \"Our Music\" (http://www.guitarists.net/music/)</li>\n";
         }
         if ($arrFree["totals"]) {
-            $plainText .= "  - " . number_format($arrFree["totals"]) . " topics in \"Free For All\" (http://www.guitarists.net/forum/topics.php?forum=32)\n";
-            $htmlText .= "<li>" . number_format($arrFree["totals"]) . " topics in \"Free For All\" (http://www.guitarists.net/forum/topics.php?forum=32)</li>\n";
+            $plainText .= "  - " . number_format($arrFree["totals"]) . " topics in \"Free For All\" (http://www.guitarists.net/forum_ggc/topics.php?forum=32)\n";
+            $htmlText .= "<li>" . number_format($arrFree["totals"]) . " topics in \"Free For All\" (http://www.guitarists.net/forum_ggc/topics.php?forum=32)</li>\n";
         }
         if ($arrOpen["totals"]) {
-            $plainText .= "  - " . number_format($arrOpen["totals"]) . " topics in \"Open Chat\" (http://www.guitarists.net/forum/topics.php?forum=11)\n";
-            $htmlText .= "<li>" . number_format($arrOpen["totals"]) . " topics in \"Open Chat\" (http://www.guitarists.net/forum/topics.php?forum=11)</li>\n";
+            $plainText .= "  - " . number_format($arrOpen["totals"]) . " topics in \"Open Chat\" (http://www.guitarists.net/forum_ggc/topics.php?forum=11)\n";
+            $htmlText .= "<li>" . number_format($arrOpen["totals"]) . " topics in \"Open Chat\" (http://www.guitarists.net/forum_ggc/topics.php?forum=11)</li>\n";
         }
         if ($arrGear["totals"]) {
             $plainText .= "  - " . number_format($arrGear["totals"]) . " new gear ratings (http://www.guitarists.net/gear/)\n";

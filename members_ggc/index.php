@@ -224,7 +224,7 @@
                             }
                             ?>
                             <tr valign="top" bgcolor="<?php print $bgcolor; ?>">
-                                <td><a href="/forum/view.php?forum=<?php print $qryRow["intForum"]; ?>&thread=<?php print $qryRow["ID"]; ?>"><b><?php print $qryRow["strTitle"]; ?></b></a> (<?php print $qryRow["intReplies"]; ?>)</td>
+                                <td><a href="/forum_ggc/view.php?forum=<?php print $qryRow["intForum"]; ?>&thread=<?php print $qryRow["ID"]; ?>"><b><?php print $qryRow["strTitle"]; ?></b></a> (<?php print $qryRow["intReplies"]; ?>)</td>
                                 <td nowrap><?php print date("M\. j g\:i A", strtotime($qryRow["dateLastPost"])); ?></td>
                             </tr>
                             <?php
@@ -234,7 +234,7 @@
                         ?>
                         <tr>
                             <td align="right" colspan="2">
-                            <b>&raquo;&nbsp;<a href="/forum/index.php"><b>View the forums</b></a>
+                            <b>&raquo;&nbsp;<a href="/forum_ggc/index.php"><b>View the forums</b></a>
                             </td>
                         </tr>
                         </table>
@@ -242,7 +242,7 @@
                     } else {
                         ?>
                         You currently do not have any active threads in our forums.  To start a new 
-                        thread, or reply to a number of others, <a href="/forum/index.php"><b>click here</b></a>.
+                        thread, or reply to a number of others, <a href="/forum_ggc/index.php"><b>click here</b></a>.
                         <?php
                     }
                 ?>
@@ -253,7 +253,7 @@
             </tr>
             <tr>
                 <td class="innertitle">&nbsp;<img src="/images/pointer.gif" align="absmiddle" width="11" height="11" alt="" border="0">&nbsp;<a href="saved.php">Saved Items</a> (<?php print $qrySaved->numRows(); ?>)</td>
-                <td class="innertitle">&nbsp;<img src="/images/pointer.gif" align="absmiddle" width="11" height="11" alt="" border="0">&nbsp;<a href="/forum/msgs/index.php">Private Messages</a> (<?php print $qryPMs->numRows(); ?>)</td>
+                <td class="innertitle">&nbsp;<img src="/images/pointer.gif" align="absmiddle" width="11" height="11" alt="" border="0">&nbsp;<a href="/forum_ggc/msgs/index.php">Private Messages</a> (<?php print $qryPMs->numRows(); ?>)</td>
             </tr>
             <tr valign="top">
                 <td>
@@ -262,7 +262,7 @@
                 <a href="saved.php"><b>click here</b></a>.
                 </td>
                 <td>
-                Send <a href="/forum/msgs/index.php"><b>private messages</b></a> to other users, or read 
+                Send <a href="/forum_ggc/msgs/index.php"><b>private messages</b></a> to other users, or read 
                 messages sent to you from other members of the community.
                 </td>
             </tr>

@@ -73,7 +73,7 @@
     <br>
     <table width="100%" cellspacing="0" cellpadding="2" border="0">
     <tr>
-        <td class="tablehead">&nbsp;&raquo;&nbsp;<a href="/index.php"><b>Home</b></a>&nbsp;&raquo;&nbsp;<a href="/members/index.php"><b>Members Area</b></a>&nbsp;&raquo;&nbsp;Forum Options</td>
+        <td class="tablehead">&nbsp;&raquo;&nbsp;<a href="/index.php"><b>Home</b></a>&nbsp;&raquo;&nbsp;<a href="/members_ggc/index.php"><b>Members Area</b></a>&nbsp;&raquo;&nbsp;Forum Options</td>
     </tr>
     </table>
     
@@ -126,7 +126,7 @@
     <tr valign="top">
         <td colspan="2">
         <textarea name="txtSignature" cols="80" rows="8" class="input"><?php print trim($txtSig); ?></textarea><br />
-        Use the same <a href="javascript:newWin('/forum/bbcode.php', 600, 400)"><b>BBCode tags</b></a> you use in the forums.
+        Use the same <a href="javascript:newWin('/forum_ggc/bbcode.php', 600, 400)"><b>BBCode tags</b></a> you use in the forums.
         <p />
         <?php
             // loop through and display our smilies

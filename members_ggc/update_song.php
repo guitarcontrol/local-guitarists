@@ -38,14 +38,14 @@
         print "
         <script language=\"JavaScript\">
         alert(\"Your song was successfully updated.\");
-        location.replace(\"/members/index.php\");
+        location.replace(\"/members_ggc/index.php\");
         </script>";
     } else {
         print "
         <script language=\"JavaScript\">
         alert(\"Your song was not successfully updated.  This could be\\n\" +
               \"because of an error, or no data was changed.\");
-        location.replace(\"/members/index.php\");
+        location.replace(\"/members_ggc/index.php\");
         </script>";
     }
 ?>

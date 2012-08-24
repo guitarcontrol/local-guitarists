@@ -36,7 +36,7 @@
     <br />
     <table width="100%" cellspacing="0" cellpadding="2" border="0">
     <tr>
-        <td class="tablehead">&nbsp;&raquo;&nbsp;<a href="/" title="Guitar Resources Home"><b>Home</b></a>&nbsp;&raquo;&nbsp;<a href="/members/" title="Members Area"><b>Members Area</b></a>&nbsp;&raquo;&nbsp;Invite A Friend To Join Us</td>
+        <td class="tablehead">&nbsp;&raquo;&nbsp;<a href="/" title="Guitar Resources Home"><b>Home</b></a>&nbsp;&raquo;&nbsp;<a href="/members_ggc/" title="Members Area"><b>Members Area</b></a>&nbsp;&raquo;&nbsp;Invite A Friend To Join Us</td>
     </tr>
     </table>
     

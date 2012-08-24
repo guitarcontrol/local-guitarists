@@ -150,19 +150,26 @@
     $crlf = chr(10);
     
     // include our header file
-    require("header.php");
+    //require("header.php");
 ?>
+	<link type="text/css" rel="stylesheet" href="/inc/styles.css" />
+    <style>
+    BODY {
+      background: none;
+    }
+    </style>
+
 
     <br>
     <table width="100%" cellspacing="0" cellpadding="2" border="0">
     <tr>
-        <td class="tablehead">&nbsp;&raquo;&nbsp;<a href="/index.php"><b>Home</b></a>&nbsp;&raquo;&nbsp;Members Profile: <?php print $qryInfo["strFName"]; ?> <?php print $qryInfo["strLName"]; ?> (<?php print $qryInfo["strUsername"]; ?>)</td>
+        <td class="tablehead">&nbsp;&raquo;&nbsp;<a href="/forum_ggc/index.php"><b>Home</b></a>&nbsp;&raquo;&nbsp;Members Profile: <?php print $qryInfo["strFName"]; ?> <?php print $qryInfo["strLName"]; ?> (<?php print $qryInfo["strUsername"]; ?>)</td>
     </tr>
     </table>
     
     <table width="100%" cellspacing="0" cellpadding="2" border="0">
     <tr valign="top">
-        <?php require("fastclick.php"); ?>
+        <?php //require("fastclick.php"); ?>
         <td align="center">
     
         <!--- begin layout file --->
@@ -456,8 +463,8 @@
                     // see if they're themselve or someone else
                     if ($_SESSION["MemberID"] && $_SESSION["MemberID"] != $_GET["user"]) {
                         ?>
-                        &raquo;&nbsp;Send <?php print trim($qryInfo["strUsername"]); ?> a <a href="/forum/msgs/post/index_bb.php?user=<?php print $_GET["user"]; ?>" title="Send Private Message"><b>Private Message</b></a>.<br />
-                        &raquo;&nbsp;Add to your "<a href="buddy.php?id=<?php print $_GET["user"]; ?>&return=/members/profile.php?user=<?php print $_GET["user"]; ?>" title="Add to Buddy List"><b>buddy list</b></a>".
+                        &raquo;&nbsp;Send <?php print trim($qryInfo["strUsername"]); ?> a <a href="/forum_ggc/msgs/post/index_bb.php?user=<?php print $_GET["user"]; ?>" title="Send Private Message"><b>Private Message</b></a>.<br />
+                        &raquo;&nbsp;Add to your "<a href="buddy.php?id=<?php print $_GET["user"]; ?>&return=/members_ggc/profile.php?user=<?php print $_GET["user"]; ?>" title="Add to Buddy List"><b>buddy list</b></a>".
                         <?php
                     }
                 ?>
@@ -567,7 +574,7 @@
             if ($_GET["user"] == $_SESSION["MemberID"]) {
                 ?>
                 <p>
-                <b>&raquo;</b> <a href="/members/index.php"><b>Edit This Info</b></a>
+                <b>&raquo;</b> <a href="/members_ggc/index.php"><b>Edit This Info</b></a>
                 <?php
             }
             ?>

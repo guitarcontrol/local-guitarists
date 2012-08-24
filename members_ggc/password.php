@@ -29,7 +29,7 @@
     <br>
     <table width="100%" cellspacing="0" cellpadding="2" border="0">
     <tr>
-        <td class="tablehead">&nbsp;&raquo;&nbsp;<a href="/index.php"><b>Home</b></a>&nbsp;&raquo;&nbsp;<a href="/members/index.php"><b>Members Area</b></a>&nbsp;&raquo;&nbsp;Change your password</td>
+        <td class="tablehead">&nbsp;&raquo;&nbsp;<a href="/index.php"><b>Home</b></a>&nbsp;&raquo;&nbsp;<a href="/members_ggc/index.php"><b>Members Area</b></a>&nbsp;&raquo;&nbsp;Change your password</td>
     </tr>
     </table>
     

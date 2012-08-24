@@ -19,7 +19,7 @@
     
     // make sure they checked the delete option to verify
     if (empty($_POST["deleteMe"])) {
-        header("Location: /members/remove.php?status=2");
+        header("Location: /members_ggc/remove.php?status=2");
         exit();
     }
     
@@ -36,7 +36,7 @@
     
     // if they don't match, stop here
     if ($_POST["ID"] != $arrUser["ID"] && $_POST["strRegKey"] != $arrUser["strRegKey"]) {
-        header("Location: /members/remove.php?status=1");
+        header("Location: /members_ggc/remove.php?status=1");
         exit();
     }
     

@@ -22,7 +22,7 @@
         print "
         <script language=\"JavaScript\">
         alert(\"Please choose something to search by.\");
-        location.replace(\"/members/index.php\");
+        location.replace(\"/members_ggc/index.php\");
         </script>";
         exit();
     }

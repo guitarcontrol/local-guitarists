@@ -32,6 +32,6 @@
     // all done!
     print "
     <script language=\"JavaScript\">
-    location.replace(\"/members/saved.php\");
+    location.replace(\"/members_ggc/saved.php\");
     </script>";
 ?>

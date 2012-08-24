@@ -29,7 +29,7 @@
     <br>
     <table width="100%" cellspacing="0" cellpadding="2" border="0">
     <tr>
-        <td class="tablehead">&nbsp;&raquo;&nbsp;<a href="/index.php"><b>Home</b></a>&nbsp;&raquo;&nbsp;<a href="/members/index.php"><b>Members Area</b></a>&nbsp;&raquo;&nbsp;Edit '<?php print $qrySong["Title"]; ?>'</td>
+        <td class="tablehead">&nbsp;&raquo;&nbsp;<a href="/index.php"><b>Home</b></a>&nbsp;&raquo;&nbsp;<a href="/members_ggc/index.php"><b>Members Area</b></a>&nbsp;&raquo;&nbsp;Edit '<?php print $qrySong["Title"]; ?>'</td>
     </tr>
     </table>
     
@@ -167,7 +167,7 @@
             <td></td>
             <td class="smalltxt">
             Inactive posts will still be in the database.  You can update it at anytime via 
-            your <a href="/members/index.php"><b>account editor</b></a>.
+            your <a href="/members_ggc/index.php"><b>account editor</b></a>.
             </td>
         </tr>
         <tr>

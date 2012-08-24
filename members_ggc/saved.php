@@ -145,7 +145,7 @@
     <br>
     <table width="100%" cellspacing="0" cellpadding="2" border="0">
     <tr>
-        <td class="tablehead">&nbsp;&raquo;&nbsp;<a href="/index.php"><b>Home</b></a>&nbsp;&raquo;&nbsp;<a href="/members/index.php"><b>Members Area</b></a>&nbsp;&raquo;&nbsp;Your Favorite Items</td>
+        <td class="tablehead">&nbsp;&raquo;&nbsp;<a href="/index.php"><b>Home</b></a>&nbsp;&raquo;&nbsp;<a href="/members_ggc/index.php"><b>Members Area</b></a>&nbsp;&raquo;&nbsp;Your Favorite Items</td>
     </tr>
     </table>
     
@@ -238,10 +238,10 @@
                             ?>
                             <tr bgcolor="<?php print $bgcolor; ?>">
                                 <td width="20"><a href="delete.php?id=<?php print $qryRow["intItem"]; ?>&type=2"><img src="images/delete.gif" width="16" height="16" alt="Delete" border="0"></a></td>
-                                <td class="medtxt"><a href="/forum/view.php?forum=<?php print $qryRow["intForum"]; ?>&thread=<?php print $qryRow["ID"]; ?>"><b><?php print $qryRow["strTitle"]; ?></b></a> (<?php print $qryRow["intReplies"]; ?>)</td>
+                                <td class="medtxt"><a href="/forum_ggc/view.php?forum=<?php print $qryRow["intForum"]; ?>&thread=<?php print $qryRow["ID"]; ?>"><b><?php print $qryRow["strTitle"]; ?></b></a> (<?php print $qryRow["intReplies"]; ?>)</td>
                                 <td class="medtxt"><?php print $qryRow["strName"]; ?></td>
                                 <td class="medtxt"><?php print date("n/j/Y \@ g:i a", strtotime($qryRow["dateLastPost"])); ?></td>
-                                <td class="medtxt"><a href="/members/profile.php?user=<?php print $qryRow["intLastID"]; ?>"><b><?php print $qryRow["strUsername"]; ?></b></a></td>
+                                <td class="medtxt"><a href="/members_ggc/profile.php?user=<?php print $qryRow["intLastID"]; ?>"><b><?php print $qryRow["strUsername"]; ?></b></a></td>
                             </tr>
                             <?php
                         /* } */
@@ -252,7 +252,7 @@
                     }
                     ?>
                     <tr>
-                        <td colspan="5">&raquo;&nbsp;<a href="/forum/index.php"><b>View Our Forums</b></a></td>
+                        <td colspan="5">&raquo;&nbsp;<a href="/forum_ggc/index.php"><b>View Our Forums</b></a></td>
                     </tr>
                     <?php
                 } else {
@@ -260,7 +260,7 @@
                     <tr>
                         <td>
                         You are not currently subscribed to any threads at this time.  Feel 
-                        free to browse our <a href="/forum/index.php"><b>forums</b></a>, 
+                        free to browse our <a href="/forum_ggc/index.php"><b>forums</b></a>, 
                         and subscribe to any threads that you find interesting.
                         </td>
                     </tr>
