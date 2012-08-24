@@ -229,7 +229,7 @@
                             <td class="smalltxt" align="center"><?php print number_format($qryRow["intViews"]); ?></td>
                             <td class="smalltxt" align="center">
                             <?php if (!$ggclink) { ?>
-                                <a href="/members/profile.php?user=<?php print $qryRow["intMemID"]; ?>"><b><?php print $qryRow["strUsername"]; ?></b></a>
+                                <a href="/members_ggc/profile.php?user=<?php print $qryRow["intMemID"]; ?>"><b><?php print $qryRow["strUsername"]; ?></b></a>
                             <?php } else { ?>
                                 <b><?php print $qryRow["strUsername"]; ?></b>
                             <?php } ?>
@@ -239,7 +239,7 @@
                             if (strlen($qryRow["strLastPost"])) {
                                 ?><br />
                                 <?php if (!$ggclink) { ?>
-                                    <a href="/members/profile.php?user=<?php print $qryRow["intLastID"]; ?>"><b><?php print trim($qryRow["strLastPost"]); ?></b></a>
+                                    <a href="/members_ggc/profile.php?user=<?php print $qryRow["intLastID"]; ?>"><b><?php print trim($qryRow["strLastPost"]); ?></b></a>
                                 <?php } else { ?>
                                     <b><?php print trim($qryRow["strLastPost"]); ?></b>
                                 <?php }

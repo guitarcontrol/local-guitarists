@@ -87,7 +87,7 @@
             <table width="100%" cellpadding="0" cellspacing="1" border="0">
             <form name="myChoiceTop">
             <tr>
-                <!--- <td width="150" class="smalltxt">Moderated By: <a href="/members/profile.php?user=#qryForum.intAdmin#"><b>#qryForum.strUsername#</b></a></td> --->
+                <!--- <td width="150" class="smalltxt">Moderated By: <a href="/members_ggc/profile.php?user=#qryForum.intAdmin#"><b>#qryForum.strUsername#</b></a></td> --->
                 <td align="right" class="smalltxt">
                 <b>Options:</b>
                 <select name="option" class="dropdown" onChange="location.href=this.value">
@@ -98,7 +98,7 @@
                             if ($_SESSION["MemberID"]) {
                                 ?>
                                 <option value="/forum_ggc/myposts.php">&nbsp;&raquo;&nbsp;View Your Posts</option>
-                                <option value="/members/msgs/index.php">&nbsp;&raquo;&nbsp;View Private Messages</option>
+                                <option value="/members_ggc/msgs/index.php">&nbsp;&raquo;&nbsp;View Private Messages</option>
                                 <?php
                             } else {
                                 ?>
@@ -148,7 +148,7 @@
                         <td align="center" class="smalltxt"><?php print number_format($qryRow["intReplies"]); ?></td>
                         <td align="center" class="smalltxt"><?php print number_format($qryRow["intViews"]); ?></td>
                         <?php if (empty($_SESSION["GGCIFrame"])) {
-                            ?><td align="center" class="smalltxt" nowrap><a href="/members/profile.php?user=<?php print $qryRow["memID"]; ?>"><b><?php print $qryRow["strUsername"]; ?></b></a></td><?php
+                            ?><td align="center" class="smalltxt" nowrap><a href="/members_ggc/profile.php?user=<?php print $qryRow["memID"]; ?>"><b><?php print $qryRow["strUsername"]; ?></b></a></td><?php
                         } else {
                             ?><td align="center" class="smalltxt" nowrap><b><?php print $qryRow["strUsername"]; ?></b></td><?php
                         } ?>
@@ -157,7 +157,7 @@
                         if (strlen($qryRow["strLastPost"])) {
                             if (empty($_SESSION["GGCIFrame"])) {
                                 print "<br />
-                                <a href=\"/members/profile.php?user=" . $qryRow["intLastID"] . "\"><b>" . $qryRow["strLastPost"] . "</b></a>";
+                                <a href=\"/members_ggc/profile.php?user=" . $qryRow["intLastID"] . "\"><b>" . $qryRow["strLastPost"] . "</b></a>";
                             } else {
                                 print "<br />
                                 <b>" . $qryRow["strLastPost"] . "</b>";
@@ -191,7 +191,7 @@
             <table width="100%" cellpadding="0" cellspacing="1" border="0">
             <form name="myChoiceBottom">
             <tr>
-                <!--- <td width="150" class="smalltxt">Moderated By: <a href="/members/profile.php?user=#qryForum.intAdmin#"><b>#qryForum.strUsername#</b></a></td> --->
+                <!--- <td width="150" class="smalltxt">Moderated By: <a href="/members_ggc/profile.php?user=#qryForum.intAdmin#"><b>#qryForum.strUsername#</b></a></td> --->
                 <td align="right" class="smalltxt">
                 <b>Options:</b>
                 <select name="option" class="dropdown" onChange="location.href=this.value">
@@ -202,7 +202,7 @@
                             if ($_SESSION["MemberID"]) {
                                 ?>
                                 <option value="/forum_ggc/myposts.php">&nbsp;&raquo;&nbsp;View Your Posts</option>
-                                <option value="/members/msgs/index.php">&nbsp;&raquo;&nbsp;View Private Messages</option>
+                                <option value="/members_ggc/msgs/index.php">&nbsp;&raquo;&nbsp;View Private Messages</option>
                                 <?php
                             } else {
                                 ?>

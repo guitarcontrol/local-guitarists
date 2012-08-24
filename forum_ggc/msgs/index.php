@@ -148,7 +148,7 @@
                                 print " <b style=\"color: #cc3333; font-style : italic;\">NEW!</b>";
                             }
                             ?></td>
-                            <td width="65" align="center" class="smalltxt"><a href="/members/profile.php?user=<?php print $qryUser["ID"]; ?>"><b><?php print $qryUser["strUsername"]; ?></b></a></td>
+                            <td width="65" align="center" class="smalltxt"><a href="/members_ggc/profile.php?user=<?php print $qryUser["ID"]; ?>"><b><?php print $qryUser["strUsername"]; ?></b></a></td>
                             <td width="30" align="center" class="smalltxt"><?php print $qryRow["intReplies"]; ?></td>
                             <td width="40" align="center" class="smalltxt"><?php print $qryRow["intViews"]; ?></td>
                             <td width="125" align="center" class="smalltxt"><?php print date("M\. j \@ g\:i A", strtotime($qryRow["dateLastPost"])); ?></td>

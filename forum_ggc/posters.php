@@ -96,7 +96,7 @@
                     <tr bgcolor="<?php print $bgcolor; ?>">
                         <td nowrap><b>&raquo;&nbsp;
                         <?php if (empty($_SESSION["GGCIFrame"])) {
-                            ?><a href="/members/profile.php?user=<?php print $qryRow["ID"]; ?>"><?php print $qryRow["strUsername"]; ?></a><?php
+                            ?><a href="/members_ggc/profile.php?user=<?php print $qryRow["ID"]; ?>"><?php print $qryRow["strUsername"]; ?></a><?php
                         } else {
                             ?><?php print $qryRow["strUsername"]; ?><?php
                         } ?></b></td>

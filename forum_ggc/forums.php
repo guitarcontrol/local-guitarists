@@ -132,7 +132,7 @@
                         if ($_SESSION["MemberID"]) {
                             ?>
                             <option value="/forum_ggc/myposts.php">&nbsp;&raquo;&nbsp;View Your Posts</option>
-                            <option value="/members/msgs/index.php">&nbsp;&raquo;&nbsp;View Private Messages</option>
+                            <option value="/members_ggc/msgs/index.php">&nbsp;&raquo;&nbsp;View Private Messages</option>
                             <?php
                         } else {
                             ?>
@@ -187,7 +187,7 @@
                     if (!$qryRow["intTopics"] && !$qryRow["intPosts"]) {
                         print "---";
                     } else {
-                        print date("M\. j g\:i A", strtotime($qryRow["dateChanged"])) . "<br><b><a href=\"/members/profile.php?user=" . $qryRow["intLastID"] . "\">" . $qryRow["strLastName"] . "</a></b>";
+                        print date("M\. j g\:i A", strtotime($qryRow["dateChanged"])) . "<br><b><a href=\"/members_ggc/profile.php?user=" . $qryRow["intLastID"] . "\">" . $qryRow["strLastName"] . "</a></b>";
                     }
                     ?>
                     </td>

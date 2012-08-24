@@ -24,7 +24,7 @@
                     print "<img src='/files/" . $qryMain["avatar"] . "' width='" . $fileData[0] . "' height='" . $fileData[1] . "' alt='Avatar for " . $qryMain["strUsername"] . "' /><br />\n\n";
                 }
             ?>
-            <a href="/members/profile.php?user=<?php print $qryMain["intMemID"]; ?>"><b style="font-size: 12px;"><?php print $qryMain["strUsername"]; ?></b></a><br>
+            <a href="/members_ggc/profile.php?user=<?php print $qryMain["intMemID"]; ?>"><b style="font-size: 12px;"><?php print $qryMain["strUsername"]; ?></b></a><br>
             <b>IP:</b> 
             <?php
             // show the IP to admins
@@ -116,7 +116,7 @@
                 if (!$qryMain["intBanned"]) {
                     ?>
                     &raquo; <a href="/forum_ggc/msgs/post/index_bb.php?user=<?php print $qryMain["intMemID"]; ?>"><b>Send Private Message</b></a><br>
-                    &raquo; <a href="/members/buddy.php?id=<?php print $qryMain["intMemID"]; ?>&return=/forum_ggc/view_bb.php?<?php print $_SERVER["QUERY_STRING"]; ?>"><b>Add to "Buddy List"</b></a><br>
+                    &raquo; <a href="/members_ggc/buddy.php?id=<?php print $qryMain["intMemID"]; ?>&return=/forum_ggc/view_bb.php?<?php print $_SERVER["QUERY_STRING"]; ?>"><b>Add to "Buddy List"</b></a><br>
                     <?php
                 }
             }
@@ -289,7 +289,7 @@
                                 print "<img src='/files/" . $qryRow["avatar"] . "' width='" . $fileData[0] . "' height='" . $fileData[1] . "' alt='Avatar for " . $qryRow["strUsername"] . "' /><br />\n\n";
                             }
                         ?>
-                    <a href="/members/profile.php?user=<?php print $qryRow["intMemID"]; ?>"><b style="font-size: 12px;"><?php print $qryRow["strUsername"]; ?></b></a><br>
+                    <a href="/members_ggc/profile.php?user=<?php print $qryRow["intMemID"]; ?>"><b style="font-size: 12px;"><?php print $qryRow["strUsername"]; ?></b></a><br>
                     IP: 
                     <?php
                     // if they're a mod, show the IP
@@ -358,7 +358,7 @@
                     
                     print "
                     &raquo; <a href=\"/forum_ggc/msgs/post/index_bb.php?user=" . $qryRow["intMemID"] . "\"><b>Send Private Message</b></a><br>
-                    &raquo; <a href=\"/members/buddy.php?id=" . $qryRow["intMemID"] . "&return=/forum_ggc/view_bb.php?" . $_SERVER["QUERY_STRING"] . "\"><b>Add to \"Buddy List\"</b></a><br>\n";
+                    &raquo; <a href=\"/members_ggc/buddy.php?id=" . $qryRow["intMemID"] . "&return=/forum_ggc/view_bb.php?" . $_SERVER["QUERY_STRING"] . "\"><b>Add to \"Buddy List\"</b></a><br>\n";
                 }
                 
                 // see if they're a mod

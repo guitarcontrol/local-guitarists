@@ -157,7 +157,7 @@
                     // see if they're logged in or not
                     if ($_SESSION["MemberID"]) {
                         ?>
-                        <option value="/members/msgs/index.php">&nbsp;&raquo;&nbsp;View Private Messages</option>
+                        <option value="/members_ggc/msgs/index.php">&nbsp;&raquo;&nbsp;View Private Messages</option>
                         <?php
                     } else {
                         ?>
@@ -245,7 +245,7 @@
                         // see if we have a valid date
                         if (strlen($qryRow["strLastPost"])) {
                             print "<br>
-                            <a href=\"/members/profile.php?user=" . $qryRow["intLastID"] . "\"><b>" . trim($qryRow["strLastPost"]) . "</b></a>";
+                            <a href=\"/members_ggc/profile.php?user=" . $qryRow["intLastID"] . "\"><b>" . trim($qryRow["strLastPost"]) . "</b></a>";
                         }
                         ?></td>
                     </tr>
@@ -353,7 +353,7 @@
                         // see if we have a valid date
                         if (strlen($qryRow["strLastPost"])) {
                             print "<br>
-                            <a href=\"/members/profile.php?user=" . $qryRow["intLastID"] . "\"><b>" . trim($qryRow["strLastPost"]) . "</b></a>";
+                            <a href=\"/members_ggc/profile.php?user=" . $qryRow["intLastID"] . "\"><b>" . trim($qryRow["strLastPost"]) . "</b></a>";
                         }
                         ?></td>
                     </tr>

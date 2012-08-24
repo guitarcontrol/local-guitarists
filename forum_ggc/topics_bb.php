@@ -26,7 +26,7 @@
         print "
         <script language=\"JavaScript\">
         alert(\"Private Messages have moved to their own area.  Please update your bookmarks.\");
-        location.replace(\"/members/msgs/index.php\");
+        location.replace(\"/members_ggc/msgs/index.php\");
         </script>";
         exit();
     }
@@ -274,7 +274,7 @@
                         if ($_SESSION["MemberID"]) {
                             ?>
                             <option value="/forum_ggc/myposts.php">&nbsp;&raquo;&nbsp;View Your Posts</option>
-                            <option value="/members/msgs/index.php">&nbsp;&raquo;&nbsp;View Private Messages</option>
+                            <option value="/members_ggc/msgs/index.php">&nbsp;&raquo;&nbsp;View Private Messages</option>
                             <?php
                         } else {
                             ?>
@@ -378,7 +378,7 @@
                         while ($qryRow = $qryMods->fetchRow(DB_FETCHMODE_ASSOC)) {
                             if (empty($_SESSION["GGCIFrame"])) {
                                 ?>
-                                <a href="/members/profile.php?user=<?php print $qryRow["MemberID"]; ?>"><b><?php print $qryRow["strUsername"]; ?></b></a><?php
+                                <a href="/members_ggc/profile.php?user=<?php print $qryRow["MemberID"]; ?>"><b><?php print $qryRow["strUsername"]; ?></b></a><?php
                             } else {
                                 ?>
                                 <b><?php print $qryRow["strUsername"]; ?></b><?php
@@ -481,7 +481,7 @@
 
                                 <td align="center" class="smalltxt">
                                 <?php if (empty($_SESSION["GGCIFrame"])) {
-                                    ?><a href="/members/profile.php?user=<?php print $qryRow["memID"]; ?>"><b><?php print $qryRow["strUsername"]; ?></b></a><?php
+                                    ?><a href="/members_ggc/profile.php?user=<?php print $qryRow["memID"]; ?>"><b><?php print $qryRow["strUsername"]; ?></b></a><?php
                                 } else {
                                     ?><b><?php print $qryRow["strUsername"]; ?></b><?php
                                 } ?></td>
@@ -493,7 +493,7 @@
                                 if (strlen($qryRow["strLastPost"])) {
                                     if (empty($_SESSION["GGCIFrame"])) {
                                         ?><br />
-                                        <a href="/members/profile.php?user=<?php print $qryRow["intLastID"]; ?>"><b><?php print trim($qryRow["strLastPost"]); ?></b></a>
+                                        <a href="/members_ggc/profile.php?user=<?php print $qryRow["intLastID"]; ?>"><b><?php print trim($qryRow["strLastPost"]); ?></b></a>
                                         <?php
                                     } else {
                                         ?><br />

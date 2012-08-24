@@ -196,7 +196,7 @@
             </tr>
             <tr valign="top">
                 <td bgcolor="#f6f6f6" width="130" class="smalltxt">
-                <a href="/members/profile.php?user=<?php print $qryMessage["intMemID"]; ?>"><b class="medtxt"><?php print $qryMessage["strUsername"]; ?></b></a><br>
+                <a href="/members_ggc/profile.php?user=<?php print $qryMessage["intMemID"]; ?>"><b class="medtxt"><?php print $qryMessage["strUsername"]; ?></b></a><br>
                 <b>IP:</b>
                 <?php
                 // see if they're an admin or not
@@ -269,7 +269,7 @@
                     &raquo; <a href=\"edit/post_bb.php?id=" . $qryMessage["msgID"] . "\"><b>Edit Topic</b></a><br>";
                 } else {
                     ?>
-                    &raquo; <a href="/members/buddy.php?id=<?php print $qryMessage["intMemID"]; ?>&return=<?php print $strLoginURL; ?>"><b>Add to Buddy List</b></a><br>
+                    &raquo; <a href="/members_ggc/buddy.php?id=<?php print $qryMessage["intMemID"]; ?>&return=<?php print $strLoginURL; ?>"><b>Add to Buddy List</b></a><br>
                     <?php
                 }
                 ?>
@@ -330,7 +330,7 @@
                 </tr>
                 <tr valign="top">
                     <td bgcolor="#f6f6f6" class="smalltxt">
-                    <a href="/members/profile.php?user=<?php print $qryRow["intMemID"]; ?>"><b class="medtxt"><?php print $qryRow["strUsername"]; ?></b></a><br>
+                    <a href="/members_ggc/profile.php?user=<?php print $qryRow["intMemID"]; ?>"><b class="medtxt"><?php print $qryRow["strUsername"]; ?></b></a><br>
                     <b>IP:</b> 
                     <?php
                     if ($_SESSION["AccessLevel"] >= 90) {
@@ -403,7 +403,7 @@
                         <?php
                     } else {
                         ?>
-                        &raquo; <a href="/members/buddy.php?id=<?php print $qryRow["intMemID"]; ?>&return=<?php print $strLoginURL; ?>"><b>Add to Buddy List</b></a><br>
+                        &raquo; <a href="/members_ggc/buddy.php?id=<?php print $qryRow["intMemID"]; ?>&return=<?php print $strLoginURL; ?>"><b>Add to Buddy List</b></a><br>
                         <?php
                     }
                     ?>
