@@ -31,13 +31,18 @@
     $areaName = "members";
     
     // include our header file
-    require("header.php");
+    // require("header.php");
 ?>
-    
+    <link type="text/css" rel="stylesheet" href="/inc/styles.css" />
+	<style>
+    BODY {
+        background: none;
+    }
+    </style>
     <br>
     <table width="100%" cellspacing="0" cellpadding="2" border="0">
     <tr>
-        <td class="tablehead">&nbsp;&raquo;&nbsp;<a href="/index.php"><b>Home</b></a>&nbsp;&raquo;&nbsp;<a href="/members_ggc/index.php"><b>Members Area</b></a>&nbsp;&raquo;&nbsp;Edit your Email Addresses</td>
+        <td class="tablehead">&nbsp;&raquo;&nbsp;<a href="/forum_ggc/index.php"><b>Home</b></a>&nbsp;&raquo;&nbsp;<a href="/members_ggc/index.php"><b>Members Area</b></a>&nbsp;&raquo;&nbsp;Edit your Email Addresses</td>
     </tr>
     </table>
     

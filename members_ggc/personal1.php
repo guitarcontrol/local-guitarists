@@ -69,8 +69,14 @@
     $arrPrefered = array("20","90","99");
     
     // include our header
-    require("header.php");
+    //require("header.php");
 ?>
+    <link type="text/css" rel="stylesheet" href="/inc/styles.css" />
+	<style>
+    BODY {
+        background: none;
+    }
+    </style>
     <script language="JavaScript" src="/inc/func.js"></script>
     
     <br>
@@ -79,7 +85,7 @@
     <form name="myForm" action="update_personal.php" method="post" onSubmit="return checkPersonalInfo()">
     <input type="Hidden" name="ID" value="<?php print $_SESSION["MemberID"]; ?>">
     <tr>
-        <td colspan="2" class="tablehead">&nbsp;&raquo;&nbsp;<a href="/index.php" class="tablehead"><b>Home</b></a>&nbsp;&raquo;&nbsp;<a href="/members_ggc/index.php" class="tablehead"><b>Members Area</b></a>&nbsp;&raquo;&nbsp;Edit your Account Info</td>
+        <td colspan="2" class="tablehead">&nbsp;&raquo;&nbsp;<a href="/forum_ggc/index.php" class="tablehead"><b>Home</b></a>&nbsp;&raquo;&nbsp;<a href="/members_ggc/index.php" class="tablehead"><b>Members Area</b></a>&nbsp;&raquo;&nbsp;Edit your Account Info</td>
     </tr>
     <tr>
            <td width="110"><b>Name:</b> </td>

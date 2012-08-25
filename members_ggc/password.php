@@ -23,9 +23,14 @@
     $areaName = "members";
     
     // include our header file
-    require("header.php");
+    // require("header.php");
 ?>
-    
+    <link type="text/css" rel="stylesheet" href="/inc/styles.css" />
+	<style>
+    BODY {
+        background: none;
+    }
+    </style>
     <br>
     <table width="100%" cellspacing="0" cellpadding="2" border="0">
     <tr>

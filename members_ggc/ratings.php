@@ -97,12 +97,17 @@
     $areaName = "members";
     
     // include our header
-    require("header.php");
+    // require("header.php");
 ?>
-
+    <link type="text/css" rel="stylesheet" href="/inc/styles.css" />
+	<style>
+    BODY {
+        background: none;
+    }
+    </style>
     <table width="100%" cellspacing="0" cellpadding="1" border="0">
     <tr valign="top">
-        <?php if ($adPlace == 1) { require("fastclick.php"); } ?>
+        <?php //if ($adPlace == 1) { require("fastclick.php"); } ?>
         <td>
         
         <table width="100%" cellspacing="0" cellpadding="1" border="0">
