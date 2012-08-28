@@ -256,8 +256,4 @@ if (empty($_SESSION["GGCIFrame"])) {
     require("footer.php");
 }
 
-// testing
-print "<pre>\n"; print_r($_COOKIE); print_r($_SESSION); print "\n</pre>\n";
-
-echo "test3";
 ?>
