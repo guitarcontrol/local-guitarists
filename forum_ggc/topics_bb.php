@@ -562,7 +562,7 @@
                     There are currently <b>0</b> topics listed under <b>"<?php print $qryForum["strName"]; ?>"</b>
                     within the number of days specified.
                     Feel free to <a href="/forum_ggc/post/index.php?thread=<?php print $qryForum["ID"]; ?>"><b>start a new 
-                    thread</b></a>, or bookmark this page, so you can easily come back, or choose a new days range in the dropdown below.
+                    thread</b></a>, or bookmark this page, so you can easily come back, or choose a "All Posts" in the dropdown below.
 
                     <p>
 
