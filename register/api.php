@@ -58,7 +58,7 @@ if ($process == "create") {
 
     // set the password
     while (!$valid) {
-        $username = "guitarist_" . rand(1001,99999);
+        $username = "guitarist" . rand(1001,99999);
         $check = $dbConn->getRow("SELECT ID FROM `members` WHERE strUsername = " . $dbConn->quote($username) . " LIMIT 1", DB_FETCHMODE_ASSOC);
         if (empty($check["username"])) {
             $response["username"] = $username;
