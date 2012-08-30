@@ -20,7 +20,7 @@ foreach ($_POST as $key => $value) {
 }
 
 // see if any values are missing
-if (empty($response["access_token"]) || empty($response["firstname"]) || empty($response["lastname"]) || empty($response["address"]) || empty($response["city"]) || empty($response["state"]) || empty($response["zipcode"]) || empty($response["country"]) || empty($response["email"]) || empty($response["password"])) {
+if (empty($response["access_token"]) || empty($response["firstname"]) || empty($response["lastname"]) || empty($response["email"]) || empty($response["password"])) {
     $response["msg"] = "missing data";
     print trim(json_encode($response));
     exit();
@@ -102,6 +102,7 @@ if ($process == "create") {
     // get the last added ID
     $userid = $intNewId["ID"];
 
+    /*
     // get the state and country for the user
     $state = $dbConn->getRow("SELECT ID FROM `states` WHERE strAbbr = " . $dbConn->quote($response["state"]) . " LIMIT 1", DB_FETCHMODE_ASSOC);	
 	
@@ -111,21 +112,16 @@ if ($process == "create") {
         $country = $dbConn->getRow("SELECT ID FROM `countries` WHERE strCountry = " . $dbConn->quote($response["country"]) . " LIMIT 1", DB_FETCHMODE_ASSOC);		
 		$countryid = $country["ID"];
     }
+    */
 
     // add the about info
     $about = $dbConn->query("
         INSERT INTO `about` (
             intMemID,
-            strCity,
-            intState,
-            intCountry,
             intGender,
             intAge
         ) values (
             '" . $userid . "',
-            '" . trim(ucfirst(strtolower($response["city"]))) . "',
-            " . trim($state["ID"]) . ",
-            " . trim($countryid) . ",
             1,
             0
         )");
