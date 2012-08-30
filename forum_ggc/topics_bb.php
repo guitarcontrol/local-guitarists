@@ -187,35 +187,16 @@
     }
 
     // include our header file
-    if (empty($_SESSION["GGCIFrame"])) {
-        require("header.php");
-    } else {
-        ?>
+   ?>
         <link type="text/css" rel="stylesheet" href="/inc/styles.css" />
         <style>
         BODY {
             background: none;
         }
         </style>
-        <?php
-    }
-?>
-
-
-
+      
     <br />
-<?php if (empty($_SESSION["GGCIFrame"])) { ?>
-    <table width="100%" cellspacing="0" cellpadding="2" border="0">
-
-    <tr>
-
-        <td class="tablehead">&nbsp;&raquo;&nbsp;<a href="/index.php"><b>Home</b></a>&nbsp;&raquo;&nbsp;<a href="/forum_ggc/index.php"><b>Guitar Discussions</b></a>&nbsp;&raquo;&nbsp;<a href="/forum_ggc/forums.php?id=<?php print $qryForum["intParent"]; ?>"><b><?php print $qryForum["strTitle"]; ?></b></a>&nbsp;&raquo;&nbsp;<?php print $qryForum["strName"]; ?></td>
-
-    </tr>
-
-    </table>
-<?php } ?>
-    
+  
 
     <table width="100%" cellspacing="0" cellpadding="2" border="0">
 

@@ -61,6 +61,8 @@
     $pageKeywords = "guitar, chat, forum, topic, thread, guitarists, guitars";
     $areaName = "forums";
 
+    $_SESSION["GGCIFrame"] = 1;
+
     // include our header file
     if (empty($_SESSION["GGCIFrame"])) {
         require("header.php");
