@@ -455,7 +455,10 @@ function newWin(URL,width,height) {
 }
 
 function plainWin(URL,width,height) {
-	var newWin = window.open(URL, "newWin", "width=" + width + ",height=" + height + ",menu=0,scrollbars=0");
+	
+	var left = (screen.width/2)-(400/2);
+    var top = (screen.height/2)-(400/2);
+	var newWin = window.open(URL, "newWin", "width=" + width + ",height=" + height + ",menu=0,scrollbars=0,top="+ top +",left=" +left);
 }
 
 // Unique Random Numbers Picker

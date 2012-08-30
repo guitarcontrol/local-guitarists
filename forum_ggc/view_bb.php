@@ -288,12 +288,14 @@
             background: none;
         }
         </style>
+        <script language="JavaScript" type="text/javascript" src="http://guitarists.net/inc/functions.js"></script>
         <?php
     }
 ?>
-
+    
     <br />
 <?php if (empty($_SESSION["GGCIFrame"])) { ?>
+    
     <table width="100%" cellspacing="1" cellpadding="3" border="0">
     <tr>
         <td class="tablehead">&nbsp;&raquo;&nbsp;<a href="/index.php"><b>Home</b></a>&nbsp;&raquo;&nbsp;<a href="/forum_ggc/index.php"><b>Guitar Discussions</b></a>&nbsp;&raquo;&nbsp;<a href="/forum_ggc/topics_bb.php?forum=<?php print $_GET["forum"]; ?>"><b><?php print $qryMain["strName"]; ?></b></a>&nbsp;&raquo;&nbsp;<?php print $qryMain["strTitle"]; ?></td>
