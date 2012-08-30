@@ -118,7 +118,7 @@ td {
     border-left: 1px solid #103874; /*left border style*/
     border-bottom: 3px solid #103874; /*thick bottom border below tabs*/
     border-right: 1px solid #103874; /*right border style*/
-    width:100%;
+    width:775px;
 }
 .tablehead a {
     color: #f6f6f6;
